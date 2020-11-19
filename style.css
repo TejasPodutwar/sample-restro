@@ -1,93 +1,156 @@
-body{
-    margin:0px;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+    margin: 0px;
     background-color: #c7ecee;
     scroll-behavior: smooth;
 }
 
-
-h1{
-    margin:0px;
-}
-
-header{
+.nav-bar {
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
-}
-
-nav{
     background-color: #34495e;
-    position: sticky;
-    z-index: 100;
+    height: 80px;
+    width: 100%;
 }
 
-#banner{
+.heading {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    /* text-transform: uppercase; */
+}
+
+.menu-options {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#tickbtn {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 862px) {
+    .menu-options {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #556575;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #030507;
+    }
+    #tickbtn:checked~ul {
+        left: 0;
+    }
+}
+
+#banner {
     background-image: url(./imgs/rsz_tim-mossholder-fh3nwjvia-u-unsplash.jpg);
-    height:100vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
-}
-.nav-container{
-    margin:0px;
-    padding:0px;
-    list-style:none;
-    height:8vh;
-    width:40%;
-    display:flex;
-    flex-direction: ror;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    
 }
 
-a.nav-link{
-    color:#fff;
+a.nav-link {
+    color: #fff;
     text-decoration: none;
     position: relative;
     font-size: 18px;
-    
 }
 
-a.nav-link::before{
+a.nav-link::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:  #95a5a6;
+    background-color: #95a5a6;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
-
 }
 
 a.nav-link:hover:before {
     visibility: visible;
-    transform: scaleX(1);  
+    transform: scaleX(1);
 }
 
-#restro-name{
-    margin:0.5rem;
-}
-
-.container{
-    display:grid;
+.container {
+    display: grid;
     grid-template-columns: 5fr 1fr;
-    margin:0.5rem;
+    margin: 0.5rem;
 }
 
-.sub-container1, .sub-container3, .sub-container4{
-    display:grid;
+.sub-container1,
+.sub-container3,
+.sub-container4 {
+    display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.sub-container2{
+.sub-container2 {
     height: 20vh;
 }
-
-
-
