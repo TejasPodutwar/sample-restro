@@ -138,10 +138,6 @@ a.nav-link:hover:before {
     transform: scaleX(1);
 }
 
-#restro-name {
-    margin: 0.5rem;
-}
-
 .container {
     display: grid;
     grid-template-columns: 5fr 1fr;
