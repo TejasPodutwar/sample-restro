@@ -10,7 +10,7 @@
 body {
     font-family: montserrat;
     margin: 0px;
-    background-color: #c7ecee;
+    background-color: #181818;
     scroll-behavior: smooth;
 }
 
@@ -83,7 +83,7 @@ nav ul li a {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #556575;
+        background-color: #181818;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -105,6 +105,14 @@ nav ul li a {
     #tickbtn:checked~ul {
         left: 0;
     }
+
+    .content-2{
+        display: grid;
+        grid-gap:2em;
+        margin: 2rem 9.5rem 2rem 9.5rem;
+        justify-content: center;
+    }
+
 }
 
 #banner {
@@ -116,7 +124,7 @@ nav ul li a {
 }
 
 a.nav-link {
-    color: #fff;
+    color: #d3c29b;
     text-decoration: none;
     position: relative;
     font-size: 18px;
@@ -140,25 +148,83 @@ a.nav-link:hover:before {
     transform: scaleX(1);
 }
 
+#heading1{
+    padding:2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 35px;
+}
+
 .container {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    margin: 0.5rem;
+    margin:0 auto;
+    text-align: center;
+    color: #d3c29b;
 }
 
-.sub-container1,
-.sub-container3,
-.sub-container4 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.content-1{
+    line-height: 2rem;
+    justify-content: center;
 }
 
-.sub-container2 {
-    height: 20vh;
+.content-1 > h3{
+    font-size: xx-large;
 }
- 
-html {
-    height: 100%;
+
+.content-1 > img{
+    height: 40vh;
+    width:60vw;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    border-radius: 12px;
+}
+
+#gallary-heading{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: xx-large;
+}
+
+.content-1 > p{
+    margin-left:5rem;
+    margin-right:5rem;
+    font-size: 20px;
+}
+
+.content-2{
+    display: grid;
+    justify-content: center;
+}
+
+.img-item{
+    height: 65vh;
+    width: 45vw;
+    border: 2px solid #d3c29b;
+}
+
+@media (min-width: 862px){
+
+    .content-1 > img{
+        height: 55vh;
+        width:50vw;
+    }
+
+    .content-1 > p{
+        margin-left:10rem;
+        margin-right:10rem;
+    }
+    
+    .content-2{
+        
+        grid-gap:2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2rem 9.5rem 2rem 9.5rem;
+        
+    }
+    
+    .img-item{
+        height: 60vh;
+        width: 22vw;
+    }
 }
 
 .main {
@@ -167,7 +233,7 @@ html {
 
 .footer {
     background-color: black;
-    color: whitesmoke;
+    color: #d3c29b;
     height: 400px;
     position: relative;
     
@@ -199,7 +265,7 @@ html {
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-    color: whitesmoke;
+    color: #d3c29b;
 }
 
 .footer .footer-content .links ul a:hover {
@@ -221,7 +287,7 @@ html {
 .btn {
     padding: 0.5rem 1rem;
     background: red;
-    color: white;
+    color: #d3c29b;
     border: 1px solid transparent;
     border-radius: 0.25rem;
 }
@@ -245,7 +311,7 @@ html {
 
 .footer .footer-fix {
     background-color: rgb(29, 25, 25);
-    color: whitesmoke;
+    color: #d3c29b;
     height: 50px;
     width: 100%;
     text-align: center;
